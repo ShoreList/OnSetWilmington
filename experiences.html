@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Experiences | On Set Wilmington — Film Tours, Studio Access & Live Events</title>
+<meta name="description" content="Choose your On Set Wilmington experience: guided film-location tours, behind-the-scenes studio access, live film events with crew & talent, and private/corporate bookings. Book on ShoreList." />
+<meta name="theme-color" content="#0B0B0F" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --blackout:#0B0B0F;--soundstage:#16181F;--marquee-red:#C8102E;--oxblood:#5E1218;
+  --gold:#C6A052;--gold-bright:#E2C57E;--slate:#5B6B78;--slate-light:#8C9AA6;--screen-white:#F3EEE3;
+  --line:rgba(198,160,82,.22);
+  --f-display:"Anton",sans-serif;--f-head:"Archivo",sans-serif;--f-body:"Inter",sans-serif;--f-mono:"IBM Plex Mono",monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--blackout);color:var(--screen-white);font-family:var(--f-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.7}
+.btn{font-family:var(--f-head);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.86rem;padding:16px 26px;display:inline-flex;align-items:center;gap:12px;border:1px solid transparent;cursor:pointer;transition:.22s ease}
+.btn-book{background:var(--marquee-red);color:#fff}
+.btn-book:hover{background:var(--oxblood);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--screen-white);background:transparent}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn .arrow{transition:transform .22s ease}.btn:hover .arrow{transform:translateX(4px)}
+:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+
+/* NAV */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:80;display:flex;align-items:center;justify-content:space-between;padding:18px 24px;transition:.3s ease;background:linear-gradient(180deg,rgba(11,11,15,.92),transparent)}
+header.nav.scrolled{background:rgba(11,11,15,.94);border-bottom:1px solid var(--line);padding:12px 24px;backdrop-filter:blur(8px)}
+.brand{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--slate-light);transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-toggle{display:none;background:none;border:none;color:var(--screen-white);font-size:1.5rem;cursor:pointer}
+
+/* PAGE HEADER */
+.page-head{position:relative;padding:22vh 0 9vh;background:radial-gradient(120% 90% at 70% 0%,rgba(198,160,82,.10),transparent 55%),linear-gradient(160deg,#0c0e14,#0b0b0f 60%,#08080b)}
+.page-head::before,.page-head::after{content:"";position:absolute;left:0;right:0;height:34px;background:#000}
+.page-head::before{top:0}.page-head::after{bottom:0}
+.page-head h1{font-family:var(--f-display);text-transform:uppercase;line-height:.92;font-size:clamp(2.8rem,9vw,6rem);margin:16px 0 0}
+.page-head .lede{color:var(--slate-light);max-width:60ch;margin-top:18px;font-size:1.08rem}
+
+/* FEATURE ROWS */
+.features{padding:80px 0}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:46px 0;border-top:1px solid var(--line)}
+.feature:nth-child(even) .feature-art{order:2}
+.feature-art{aspect-ratio:4/3;border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:24px;background:radial-gradient(80% 60% at 50% 25%,rgba(198,160,82,.12),transparent),linear-gradient(160deg,#15171f,#0a0a0d)}
+.feature-art .num{font-family:var(--f-display);font-size:clamp(3rem,7vw,5rem);color:var(--screen-white);line-height:.9}
+.feature-art .lbl{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.26em;color:var(--gold);margin-top:12px;text-transform:uppercase}
+.feature h2{font-family:var(--f-head);font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.02;margin:4px 0 14px}
+.feature .eyebrow{margin-bottom:8px}
+.feature p{color:var(--slate-light);margin-bottom:16px}
+.incl{list-style:none;margin:0 0 20px;display:grid;gap:8px}
+.incl li{font-family:var(--f-mono);font-size:.82rem;color:var(--screen-white);display:flex;gap:10px}
+.incl li::before{content:"▸";color:var(--gold)}
+.feature-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.feature-meta .price{font-family:var(--f-head);font-weight:800;font-size:1.4rem}
+.feature-meta .price small{font-family:var(--f-mono);font-weight:400;font-size:.72rem;color:var(--slate-light);display:block;letter-spacing:.08em}
+.feature-meta .tag{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--marquee-red);border:1px solid rgba(200,16,46,.4);padding:4px 9px}
+
+/* HOW IT WORKS */
+.how{padding:90px 0;background:var(--soundstage);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;margin-top:42px}
+.step .n{font-family:var(--f-display);font-size:2.6rem;color:var(--gold)}
+.step h3{font-family:var(--f-head);font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin:6px 0 8px;font-size:1.05rem}
+.step p{color:var(--slate-light);font-size:.94rem}
+
+/* CTA BAND */
+.band{padding:90px 0;text-align:center;background:radial-gradient(100% 140% at 50% 0%,rgba(94,18,24,.4),transparent 60%),var(--blackout)}
+.band h2{font-family:var(--f-display);text-transform:uppercase;font-size:clamp(2.2rem,6vw,4.4rem);line-height:.95}
+.band p{color:var(--slate-light);max-width:54ch;margin:16px auto 28px}
+
+/* FOOTER */
+footer{padding:74px 0 38px;border-top:1px solid var(--line);text-align:center}
+.credits{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.1em;color:var(--slate-light);line-height:2.4}
+.credits .role{color:var(--slate);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;display:block;margin-top:16px}
+.credits .name{color:var(--screen-white)}
+.foot-brand{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.14em;font-size:1.5rem;margin:26px 0 8px}
+.foot-brand span{color:var(--gold)}
+.foot-fine{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;color:var(--slate);margin-top:20px}
+.foot-nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.foot-nav a{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--slate-light)}
+.foot-nav a:hover{color:var(--gold)}
+
+/* MOBILE BOOK BAR */
+.mobile-book{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;padding:12px 16px;background:rgba(11,11,15,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.mobile-book .btn{width:100%;justify-content:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .nav-links{position:fixed;inset:0;background:var(--blackout);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.3s ease;z-index:79}
+  .nav-links.open{transform:none}
+  .nav-links a{font-size:1rem}
+  .nav-toggle{display:block;z-index:81}
+  .feature{grid-template-columns:1fr;gap:24px}
+  .feature:nth-child(even) .feature-art{order:0}
+  .mobile-book{display:block}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html">ON SET <span>WILMINGTON</span></a>
+  <nav class="nav-links" id="navlinks">
+    <a href="index.html">Home</a>
+    <a href="experiences.html" class="active">Experiences</a>
+    <a href="legacy.html">The Legacy</a>
+    <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book" style="padding:11px 20px">Book on ShoreList</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Now Showing</span>
+    <h1>The Experiences</h1>
+    <p class="lede">Four ways to step onto set — from a 90-minute walk through the locations to a night with the crew who built the magic. Pick your feature; every booking happens on ShoreList.</p>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrap">
+
+    <div class="feature reveal">
+      <div class="feature-art"><div><div class="num">01</div><div class="lbl">The Downtown Feature</div></div></div>
+      <div>
+        <span class="eyebrow">Film Location Tour</span>
+        <h2>The Downtown Feature</h2>
+        <p>A 90-minute walking tour through the historic downtown locations behind decades of film and TV — guided with the kind of insider stories you'll never find on a map.</p>
+        <ul class="incl">
+          <li>~90 minutes, easy walking pace</li>
+          <li>Iconic downtown &amp; Riverwalk filming sites</li>
+          <li>Behind-the-scenes stories from a film veteran</li>
+          <li>Photo stops at fan-favorite spots</li>
+        </ul>
+        <div class="feature-meta">
+          <div class="price">$30<small>per person</small></div>
+          <span class="tag">Most Popular</span>
+        </div>
+        <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book">Book on ShoreList <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art"><div><div class="num">02</div><div class="lbl">Behind the Gates</div></div></div>
+      <div>
+        <span class="eyebrow">Studio Access Experience</span>
+        <h2>Behind the Gates</h2>
+        <p>Step inside a working production facility for a behind-the-scenes look most visitors never get. Sound stages, sets, and the real machinery of how it all gets made — when access can be arranged.</p>
+        <ul class="incl">
+          <li>Guided access to studio facilities</li>
+          <li>How sound stages &amp; sets actually work</li>
+          <li>Stories from active &amp; past productions</li>
+          <li>Strictly limited dates &amp; capacity</li>
+        </ul>
+        <div class="feature-meta">
+          <div class="price">$65<small>per person</small></div>
+          <span class="tag">Limited Dates</span>
+        </div>
+        <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book">Book on ShoreList <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art"><div><div class="num">03</div><div class="lbl">An Evening On Set</div></div></div>
+      <div>
+        <span class="eyebrow">Live Film Event</span>
+        <h2>An Evening On Set</h2>
+        <p>A live event with the crews and talent who make the magic — Q&amp;A, war stories from the set, and a night out you'll be talking about long after the credits roll.</p>
+        <ul class="incl">
+          <li>Hosted evening at a local venue</li>
+          <li>Q&amp;A with real production crew &amp; talent</li>
+          <li>Stories you won't hear anywhere else</li>
+          <li>Seasonal — a handful of nights only</li>
+        </ul>
+        <div class="feature-meta">
+          <div class="price">$55<small>per person</small></div>
+          <span class="tag">Seasonal</span>
+        </div>
+        <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book">Book on ShoreList <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature-art"><div><div class="num">04</div><div class="lbl">Book the House</div></div></div>
+      <div>
+        <span class="eyebrow">Private &amp; Corporate</span>
+        <h2>Book the House</h2>
+        <p>Private tours, group outings, corporate team-building, bachelorette weekends, and influencer experiences — designed around your group, your dates, and your call sheet.</p>
+        <ul class="incl">
+          <li>Fully customized to your group</li>
+          <li>Team-building, celebrations &amp; private events</li>
+          <li>Flexible dates &amp; group sizes</li>
+          <li>Influencer &amp; press experiences available</li>
+        </ul>
+        <div class="feature-meta">
+          <div class="price">Custom<small>quote on request</small></div>
+          <span class="tag">Private &amp; Corporate</span>
+        </div>
+        <a href="mailto:hello@onsetwilmington.com" class="btn btn-book">Request a Quote <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <span class="eyebrow reveal">How It Works</span>
+    <div class="steps">
+      <div class="step reveal"><div class="n">01</div><h3>Pick Your Experience</h3><p>Choose the tour, studio experience, or event that fits your crew.</p></div>
+      <div class="step reveal"><div class="n">02</div><h3>Book on ShoreList</h3><p>Secure checkout and instant confirmation through our booking partner.</p></div>
+      <div class="step reveal"><div class="n">03</div><h3>Step Onto Set</h3><p>Show up, meet your guide, and see Wilmington the way Hollywood does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="justify-content:center">Lights. Camera.</span>
+    <h2 class="reveal">Ready For Your Close-Up?</h2>
+    <p class="reveal">Grab your tickets and step into forty years of film history — led by the people who lived it.</p>
+    <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book reveal">Book on ShoreList <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="credits reveal">
+      <span class="role">Now Booking On</span>
+      <a class="name" href="https://www.shorelist.net" target="_blank" rel="noopener">ShoreList</a>
+      <span class="role">Find Us</span>
+      <span class="name">Wilmington, North Carolina</span>
+      <span class="role">Inquiries</span>
+      <a class="name" href="mailto:hello@onsetwilmington.com">hello@onsetwilmington.com</a>
+    </div>
+    <div class="foot-nav">
+      <a href="index.html">Home</a><a href="experiences.html">Experiences</a><a href="legacy.html">The Legacy</a>
+    </div>
+    <div class="foot-brand">ON SET <span>WILMINGTON</span></div>
+    <div class="foot-fine">© <span id="yr"></span> On Set Wilmington. Film &amp; TV titles referenced for location-history purposes only; not affiliated with or endorsed by any studio or production.</div>
+  </div>
+</footer>
+
+<div class="mobile-book"><a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book">Book on ShoreList <span class="arrow">&rarr;</span></a></div>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40)});
+var t=document.getElementById('navToggle'),l=document.getElementById('navlinks');
+t.addEventListener('click',function(){l.classList.toggle('open')});
+l.addEventListener('click',function(e){if(e.target.tagName==='A')l.classList.remove('open')});
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
