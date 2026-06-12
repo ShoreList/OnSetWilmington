@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | On Set Wilmington — Insider-Led Film Tours From Industry Veterans</title>
+<meta name="description" content="On Set Wilmington is led by film-industry veterans who've spent decades on real productions. We give Wilmington's 40-year film legacy the experience it deserves — insider access, not tourist gloss." />
+<meta name="theme-color" content="#0B0B0F" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --blackout:#0B0B0F;--soundstage:#16181F;--marquee-red:#C8102E;--oxblood:#5E1218;
+  --gold:#C6A052;--gold-bright:#E2C57E;--slate:#5B6B78;--slate-light:#8C9AA6;--screen-white:#F3EEE3;
+  --line:rgba(198,160,82,.22);
+  --f-display:"Anton",sans-serif;--f-head:"Archivo",sans-serif;--f-body:"Inter",sans-serif;--f-mono:"IBM Plex Mono",monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--blackout);color:var(--screen-white);font-family:var(--f-body);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.narrow{max-width:760px}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.7}
+.btn{font-family:var(--f-head);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.86rem;padding:16px 26px;display:inline-flex;align-items:center;gap:12px;border:1px solid transparent;cursor:pointer;transition:.22s ease}
+.btn-book{background:var(--marquee-red);color:#fff}
+.btn-book:hover{background:var(--oxblood);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--screen-white);background:transparent}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn .arrow{transition:transform .22s ease}.btn:hover .arrow{transform:translateX(4px)}
+:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+
+header.nav{position:fixed;top:0;left:0;right:0;z-index:80;display:flex;align-items:center;justify-content:space-between;padding:18px 24px;transition:.3s ease;background:linear-gradient(180deg,rgba(11,11,15,.92),transparent)}
+header.nav.scrolled{background:rgba(11,11,15,.94);border-bottom:1px solid var(--line);padding:12px 24px;backdrop-filter:blur(8px)}
+.brand{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;white-space:nowrap}
+.brand span{color:var(--gold)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--slate-light);transition:.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-toggle{display:none;background:none;border:none;color:var(--screen-white);font-size:1.5rem;cursor:pointer}
+
+.page-head{position:relative;padding:24vh 0 9vh;background:radial-gradient(120% 90% at 70% 0%,rgba(198,160,82,.10),transparent 55%),linear-gradient(160deg,#0c0e14,#0b0b0f 60%,#08080b)}
+.page-head::before,.page-head::after{content:"";position:absolute;left:0;right:0;height:34px;background:#000}
+.page-head::before{top:0}.page-head::after{bottom:0}
+.page-head h1{font-family:var(--f-display);text-transform:uppercase;line-height:.92;font-size:clamp(2.8rem,9vw,6rem);margin:16px 0 0}
+.page-head .lede{color:var(--slate-light);max-width:60ch;margin-top:18px;font-size:1.1rem}
+
+.story{padding:80px 0}
+.story p{color:#d9d3c6;font-size:1.08rem;margin-bottom:22px}
+.story p .gold{color:var(--gold-bright)}
+.pull{font-family:var(--f-head);font-weight:700;font-size:clamp(1.4rem,3.4vw,2rem);line-height:1.25;color:var(--screen-white);border-left:3px solid var(--gold);padding:6px 0 6px 24px;margin:36px 0}
+
+.profile{display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center;padding:70px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--soundstage)}
+.profile-art{aspect-ratio:3/4;border:1px solid var(--line);display:grid;place-items:center;text-align:center;background:radial-gradient(80% 60% at 50% 25%,rgba(198,160,82,.14),transparent),linear-gradient(160deg,#15171f,#0a0a0d)}
+.profile-art .ini{font-family:var(--f-display);font-size:4rem;color:var(--screen-white)}
+.profile-art .lbl{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.24em;color:var(--gold);text-transform:uppercase;margin-top:10px}
+.profile h2{font-family:var(--f-head);font-weight:900;text-transform:uppercase;font-size:clamp(1.6rem,4vw,2.2rem);margin:6px 0 14px}
+.profile p{color:var(--slate-light);margin-bottom:14px}
+
+.values{padding:90px 0}
+.val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:42px}
+.val{border:1px solid var(--line);padding:30px 26px}
+.val .n{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
+.val h3{font-family:var(--f-head);font-weight:800;text-transform:uppercase;letter-spacing:.03em;margin:10px 0 10px;font-size:1.1rem}
+.val p{color:var(--slate-light);font-size:.95rem}
+
+.band{padding:90px 0;text-align:center;background:radial-gradient(100% 140% at 50% 0%,rgba(94,18,24,.4),transparent 60%),var(--blackout)}
+.band h2{font-family:var(--f-display);text-transform:uppercase;font-size:clamp(2.2rem,6vw,4.4rem);line-height:.95}
+.band p{color:var(--slate-light);max-width:54ch;margin:16px auto 28px}
+
+footer{padding:74px 0 38px;border-top:1px solid var(--line);text-align:center}
+.credits{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.1em;color:var(--slate-light);line-height:2.4}
+.credits .role{color:var(--slate);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;display:block;margin-top:16px}
+.credits .name{color:var(--screen-white)}
+.foot-nav{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.foot-nav a{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--slate-light)}
+.foot-nav a:hover{color:var(--gold)}
+.foot-brand{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.14em;font-size:1.5rem;margin:26px 0 8px}
+.foot-brand span{color:var(--gold)}
+.foot-fine{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;color:var(--slate);margin-top:20px}
+
+.mobile-book{position:fixed;left:0;right:0;bottom:0;z-index:90;display:none;padding:12px 16px;background:rgba(11,11,15,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.mobile-book .btn{width:100%;justify-content:center}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:920px){.nav-links{gap:18px}.nav-links a{font-size:.68rem}}
+@media(max-width:860px){
+  .nav-links{position:fixed;inset:0;background:var(--blackout);flex-direction:column;justify-content:center;gap:24px;transform:translateX(100%);transition:.3s ease;z-index:79}
+  .nav-links.open{transform:none}
+  .nav-links a{font-size:1rem}
+  .nav-toggle{display:block;z-index:81}
+  .profile{grid-template-columns:1fr;gap:26px}
+  .profile-art{max-width:260px;margin:0 auto}
+  .mobile-book{display:block}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html">ON SET <span>WILMINGTON</span></a>
+  <nav class="nav-links" id="navlinks">
+    <a href="experiences.html">Experiences</a>
+    <a href="legacy.html">Legacy</a>
+    <a href="about.html" class="active">About</a>
+    <a href="groups.html">Groups</a>
+    <a href="plan.html">Plan</a>
+    <a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book" style="padding:11px 18px">Book on ShoreList</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">&#9776;</button>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Behind the Camera</span>
+    <h1>The Story</h1>
+    <p class="lede">On Set Wilmington was built on a simple belief: a city with forty years of film history deserves more than a map and a self-guided walk. It deserves the real thing — led by the people who lived it.</p>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap narrow">
+    <p class="reveal">Wilmington has spent four decades as one of America's busiest film towns — and yet, for years, the only way to experience that legacy was to wander downtown with a printout and guess which corner was in which movie. We thought the people who love film deserved better.</p>
+    <p class="reveal">So we built <span class="gold">On Set Wilmington</span> — a company dedicated to putting you on the real locations, with real stories, told by people who've actually worked in the industry. Not a sightseeing bus. Not a trivia quiz. An insider's pass to Hollywood East.</p>
+    <div class="pull reveal">"We don't point at buildings from across the street. We walk you onto set."</div>
+    <p class="reveal">On Set Wilmington is powered by <span class="gold">ShoreList</span>, the local marketplace built to showcase the best of Wilmington and the beaches. That partnership means every experience is backed by a trusted booking platform — and that supporting us means supporting the local film and tourism community.</p>
+  </div>
+</section>
+
+<section class="profile">
+  <div class="wrap" style="display:grid;grid-template-columns:300px 1fr;gap:44px;align-items:center">
+    <div class="profile-art reveal"><div><div class="ini">RM</div><div class="lbl">Co-Founder</div></div></div>
+    <div class="reveal">
+      <span class="eyebrow">Your Guide</span>
+      <h2>Three Decades On Set</h2>
+      <p>Our co-founder Ron has spent roughly thirty years working in film and television production — the kind of career that means he doesn't read these stories off a card. He's been on the sets, knows the locations the way only a working crew member can, and remembers what the city looked like before the cameras showed up.</p>
+      <p>That's the difference. When you take an On Set Wilmington experience, you're not getting a script — you're getting someone who was there, telling you what really happened between "action" and "cut."</p>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="wrap">
+    <span class="eyebrow reveal">Why On Set</span>
+    <div class="val-grid">
+      <div class="val reveal"><div class="n">01 — Access</div><h3>Real Locations</h3><p>We take you to the actual spots where film history happened — not a curated approximation.</p></div>
+      <div class="val reveal"><div class="n">02 — Authority</div><h3>Industry Insiders</h3><p>Guided by people who've worked in production, with stories you won't find online.</p></div>
+      <div class="val reveal"><div class="n">03 — Local</div><h3>Wilmington Proud</h3><p>We celebrate Hollywood East and reinvest in the community that made it possible.</p></div>
+      <div class="val reveal"><div class="n">04 — Easy</div><h3>Simple Booking</h3><p>Secure checkout through ShoreList, instant confirmation, no upfront cost to browse.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="justify-content:center">Come See For Yourself</span>
+    <h2 class="reveal">Step Onto Set.</h2>
+    <p class="reveal">Pick your experience and walk the locations with someone who's spent a career on them.</p>
+    <a href="experiences.html" class="btn btn-book reveal">See the Experiences <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="credits reveal">
+      <span class="role">Now Booking On</span>
+      <a class="name" href="https://www.shorelist.net" target="_blank" rel="noopener">ShoreList</a>
+      <span class="role">Find Us</span>
+      <span class="name">Wilmington, North Carolina</span>
+      <span class="role">Inquiries</span>
+      <a class="name" href="mailto:hello@onsetwilmington.com">hello@onsetwilmington.com</a>
+    </div>
+    <div class="foot-nav">
+      <a href="index.html">Home</a><a href="experiences.html">Experiences</a><a href="legacy.html">The Legacy</a><a href="about.html">About</a><a href="groups.html">Groups</a><a href="plan.html">Plan Your Visit</a>
+    </div>
+    <div class="foot-brand">ON SET <span>WILMINGTON</span></div>
+    <div class="foot-fine">© <span id="yr"></span> On Set Wilmington. Film &amp; TV titles referenced for location-history purposes only; not affiliated with or endorsed by any studio or production.</div>
+  </div>
+</footer>
+
+<div class="mobile-book"><a href="https://www.shorelist.net" target="_blank" rel="noopener" class="btn btn-book">Book on ShoreList <span class="arrow">&rarr;</span></a></div>
+
+<script>
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>40)});
+var t=document.getElementById('navToggle'),l=document.getElementById('navlinks');
+t.addEventListener('click',function(){l.classList.toggle('open')});
+l.addEventListener('click',function(e){if(e.target.tagName==='A')l.classList.remove('open')});
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

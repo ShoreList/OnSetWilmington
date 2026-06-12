@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thanks — We Got It | On Set Wilmington</title>
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#0B0B0F" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --blackout:#0B0B0F;--marquee-red:#C8102E;--oxblood:#5E1218;--gold:#C6A052;--gold-bright:#E2C57E;
+  --slate-light:#8C9AA6;--screen-white:#F3EEE3;--line:rgba(198,160,82,.22);
+  --f-display:"Anton",sans-serif;--f-head:"Archivo",sans-serif;--f-body:"Inter",sans-serif;--f-mono:"IBM Plex Mono",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--blackout);color:var(--screen-white);font-family:var(--f-body);min-height:100vh;display:grid;place-items:center;text-align:center;padding:40px;-webkit-font-smoothing:antialiased}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.box{position:relative;z-index:2;max-width:560px}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--f-display);text-transform:uppercase;font-size:clamp(2.6rem,9vw,4.6rem);line-height:.95;margin:18px 0 16px}
+h1 .lit{color:var(--gold-bright)}
+p{color:var(--slate-light);font-size:1.05rem;margin-bottom:30px}
+a{color:inherit;text-decoration:none}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{font-family:var(--f-head);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.84rem;padding:15px 24px;display:inline-flex;align-items:center;gap:10px;border:1px solid transparent;transition:.22s}
+.btn-book{background:var(--marquee-red);color:#fff}.btn-book:hover{background:var(--oxblood);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--screen-white)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.brand{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.14em;font-size:1.1rem;margin-top:46px;color:var(--slate-light)}
+.brand span{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="box">
+  <span class="eyebrow">That's a Wrap</span>
+  <h1>Message <span class="lit">Received</span></h1>
+  <p>Thanks for reaching out. Your inquiry just landed with our team — we'll get back to you by email, usually within one business day, with options and availability.</p>
+  <div class="btns">
+    <a href="experiences.html" class="btn btn-book">Browse Experiences &rarr;</a>
+    <a href="index.html" class="btn btn-ghost">Back Home</a>
+  </div>
+  <div class="brand">ON SET <span>WILMINGTON</span></div>
+</div>
+</body>
+</html>
